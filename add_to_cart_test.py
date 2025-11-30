@@ -5,7 +5,6 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 
 BASE = "https://www.saucedemo.com/"
-
 def screenshot(driver, name):
     os.makedirs("screenshots/add", exist_ok=True)
     driver.save_screenshot(f"screenshots/add/{name}.png")
